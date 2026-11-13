@@ -25,8 +25,8 @@ justificar una valoración profesional posterior.
 
 ## Cómo funciona esta versión
 
-Todo se ejecuta dentro del navegador. No hay servidor, no se guarda nada y no se
-envía ningún dato a ningún sitio. Al cerrar la página los resultados se pierden,
+Todo se ejecuta dentro del navegador. Sin registro. Los resultados no salen de este
+aparato. Solo se cuenta, de forma anónima, cuánta gente lo usa (ver privacidad.html). Al cerrar la página los resultados se pierden,
 así que conviene guardarlos en PDF desde la propia pantalla de resultados.
 
 Las puntuaciones las calcula un motor de reglas determinista: la misma sesión

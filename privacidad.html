@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacidad · NUMERIA</title>
+<style>
+  body{font:18px/1.55 system-ui,-apple-system,sans-serif;max-width:640px;margin:0 auto;padding:24px 18px 60px;background:#f6f7f4;color:#1d2321}
+  h1{font-size:27px;margin:0 0 6px}h2{font-size:20px;margin:26px 0 6px}
+  p,li{margin:0 0 10px}ul{padding-left:22px}
+  .corto{background:#fff;border:2px solid #d8ded8;border-radius:16px;padding:14px 16px}
+  .btn{display:inline-block;font:inherit;font-weight:700;padding:11px 16px;border-radius:14px;border:0;background:#2f6d5b;color:#fff;cursor:pointer;text-decoration:none;min-height:44px}
+  a{color:#2f6d5b}.pie{font-size:15px;color:#4c5652;margin-top:28px}
+  #dicho{font-weight:700;min-height:1.4em}
+</style>
+</head>
+<body>
+<p><a href="./">← Volver a NUMERIA</a></p>
+<h1>Privacidad</h1>
+<div class="corto">
+  <p><b>En corto:</b> no pedimos nombre, correo ni registro. Las respuestas y el resultado se quedan en tu aparato. Solo contamos, sin saber quién es nadie, cuánta gente usa NUMERIA. Y puedes apagar ese recuento en este aparato.</p>
+</div>
+
+<h2>Qué se pide</h2>
+<ul>
+  <li>La edad y el curso, para elegir las tareas.</li>
+  <li>Unas preguntas de un toque (años de colegio, lengua en la que estudia, si hay dificultades de lenguaje, lectura o atención, vista y oído, y si se pone nervioso con las mates). Salen en el informe como contexto y no se guardan en ningún sitio.</li>
+  <li>Por debajo de 14 años, una casilla para que el padre, la madre o el tutor dé permiso (LOPDGDD, art. 7).</li>
+</ul>
+
+<h2>Qué se queda en tu aparato</h2>
+<ul>
+  <li>Una marca que dice «este aparato ya ha entrado», para no contarlo dos veces. No lleva ningún número que te identifique.</li>
+  <li>Una marca si has ido a la comunidad, para no volver a enseñarte el aviso.</li>
+</ul>
+<p>Las respuestas y el informe no se guardan: al cerrar la página se pierden. Si quieres conservarlos, guárdalos tú en PDF desde la pantalla de resultados.</p>
+
+<h2>Qué se cuenta</h2>
+<p>Sumas, y nada más: cuántos aparatos abren NUMERIA, desde qué canal llegan (WhatsApp, Telegram, Facebook… si el enlace lo dice), cuántas sesiones se empiezan y se terminan, y cuántas veces se pulsa la tarjeta de la comunidad. <b>Nunca se cuentan respuestas, resultados, la edad ni el curso.</b></p>
+<p>Para sumar, tu navegador hace una llamada a un servicio de contadores (abacus.jasoncameron.dev). Como en cualquier llamada de internet, ese servicio ve la dirección de internet (IP) desde la que llega, pero no recibe nada más.</p>
+
+<h2>Apagar el recuento en este aparato</h2>
+<p><button class="btn" type="button" id="apaga">No contar este aparato</button></p>
+<p id="dicho" role="status"></p>
+
+<h2>Qué no hay</h2>
+<ul>
+  <li>Ni publicidad, ni cookies de seguimiento, ni registro.</li>
+  <li>Ni inteligencia artificial que lea las respuestas: el informe lo escribe un motor de reglas dentro de tu navegador.</li>
+</ul>
+<p class="pie">NUMERIA es una pieza del laboratorio de Gabinete Fönia y ColmenIA. Es un cribado orientativo: no dice si hay discalculia ni lo descarta.</p>
+<script>
+document.getElementById('apaga').onclick=function(){try{localStorage.setItem('numeria-no-contar','1');document.getElementById('dicho').textContent='Hecho: este aparato ya no cuenta.'}catch(e){document.getElementById('dicho').textContent='Este navegador no deja guardar la marca; abre NUMERIA con ?yo=1 al final del enlace.'}};
+</script>
+</body>
+</html>
